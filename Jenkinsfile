@@ -25,7 +25,7 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: 'src/**',
+                                        sourceFiles: 'src/index.html',
                                         removePrefix: 'src/',
                                         remoteDirectory: '/home/cloud_user',
                                         execCommand: "pwd; ls -l"
@@ -56,7 +56,7 @@ pipeline {
                                 ], 
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: 'src/**',
+                                        sourceFiles: 'src/*',
                                         removePrefix: 'src/',
                                         remoteDirectory: '/home/cloud_user',
                                         execCommand: "pwd; ls -l"
