@@ -27,6 +27,7 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: 'src/**',
                                         removePrefix: 'src/'
+                                        remoteDirectory: '/home/cloud_user' 
                                     )
                                 ]
                             )
