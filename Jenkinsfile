@@ -27,7 +27,8 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: 'src/**',
                                         removePrefix: 'src/',
-                                        remoteDirectory: '/home/cloud_user' 
+                                        remoteDirectory: '/home/cloud_user',
+                                        execCommand: "pwd; ls -l"
                                     )
                                 ]
                             )
@@ -57,7 +58,8 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: 'src/**',
                                         removePrefix: 'src/',
-                                        remoteDirectory: '/home/cloud_user' 
+                                        remoteDirectory: '/home/cloud_user',
+                                        execCommand: "pwd; ls -l"
                                     )
                                 ]
                             )
